@@ -5,7 +5,6 @@ public class Tablero {
     Casilla [][] tablero;
     public Tablero() {
     }
-
     public void setMaxTH(int maxTH) {
         this.maxTH = maxTH;
     }

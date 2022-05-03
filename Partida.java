@@ -8,6 +8,9 @@ public class Partida implements Input, Output {
 
     public Partida() {
         elegirModoJuego();
+        t.setMaxTV(maxTV);
+        t.setMaxTH(maxTH);
+        t.setNumMinas(numMinas);
     }
 
     private void elegirModoJuego() {
