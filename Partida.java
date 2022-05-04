@@ -1,6 +1,6 @@
 import java.util.InputMismatchException;
 
-public class Partida implements Input, Output {
+public class Partida implements ClassesJava, Output {
     private int maxTV;
     private int maxTH;
     private int numMinas;
