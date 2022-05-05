@@ -12,7 +12,6 @@ public class Partida implements ClassesJava, Output {
         t.setMaxTH(maxTH);
         t.setNumMinas(numMinas);
     }
-
     private void elegirModoJuego() {
         int modo = conseguirInpValEditorModos();
         if (modo == 1) {
