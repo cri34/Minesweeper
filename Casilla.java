@@ -1,11 +1,7 @@
 public class Casilla{
-    // m =mina,'-'=no tiene minas alrededor ni en la casilla, 'numero'=numero de minas alrededor
    private int numMinesProx;
-    // casilla marcada por jugador(banderilla)
     private boolean marcado;
-    // casilla descubierta o no por el jugador
    private boolean descubierta;
-
    private boolean mina;
     Casilla(){
         marcado=false;
@@ -29,4 +25,14 @@ public class Casilla{
     }
     public void setMina(boolean mina ){this.mina =mina;}
     public void setNumMinesProx(int numMinesProx ){this.numMinesProx=numMinesProx;}
+    public void display(){
+        char tCasilla='-';
+        if(getDescubierta()){
+            tCasilla=(getMina()) ? '*' : Character.forDigit(getNumMinesProx(),10);
+        }
+        if (getMarcado()){
+            tCasilla='^';
+        }
+        System.out.print( "|"+ tCasilla+"|" );
+    }
 }

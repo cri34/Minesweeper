@@ -12,6 +12,10 @@ public class Partida implements ClassesJava, Output {
         t.setMaxTH(maxTH);
         t.setNumMinas(numMinas);
     }
+    public void comenzarPartida() {
+        t.crearTablero();
+
+    }
     private void elegirModoJuego() {
         int modo = conseguirInpValEditorModos();
         if (modo == 1) {
@@ -52,7 +56,7 @@ public class Partida implements ClassesJava, Output {
             } catch (InputMismatchException IME) {
                 leerTeclado.next();
             }
-            System.out.println(ErrorModoPersonalizado);
+            System.out.println(errorModoPersonalizado);
         } while (true);
     }
 
@@ -72,7 +76,7 @@ public class Partida implements ClassesJava, Output {
             } catch (InputMismatchException IME) {
                 leerTeclado.next();
             }
-            System.out.println(ErrorConseguirInpValEditorModo);
+            System.out.println(errorConseguirInpValEditorModo);
         }
     }
 }

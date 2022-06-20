@@ -4,6 +4,8 @@ public interface Output {
     String insertaTV="inserta el tamaño vertical del tablero [min 5]";
     String insertaTH="inserta el tamaño Horizontal del tablero [min 5]";
     String insertaNM="inserta el numero de minas del tablero [min 1]";
-    String ErrorModoPersonalizado="ERROR!!,VALORES INVALIDOS, minimo valores tablero [5x5] minimo valor para numeros de minas [1]";
-    String ErrorConseguirInpValEditorModo="ERROR!!,VALOR INVALIDO INSERTA VALORES ENTRE 1-4";
+    String errorModoPersonalizado ="ERROR!!,VALORES INVALIDOS, minimo valores tablero [5x5] minimo valor para numeros de minas [1]";
+
+    String errorConseguirInpValEditorModo ="ERROR!!,VALOR INVALIDO INSERTA VALORES ENTRE 1-4";
+
 }
