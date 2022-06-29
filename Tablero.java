@@ -23,6 +23,7 @@ public class Tablero implements ClassesJava {
     public void crearTablero() {
         tablero = new Casilla[maxTV][maxTH];
         inicializarTablero();
+        generarMinas();
         mostrarTablero();
     }
     private void inicializarTablero() {
@@ -34,6 +35,19 @@ public class Tablero implements ClassesJava {
                 Casilla abC = new Casilla();
                 tablero[posV][posH] = abC;
                 numC++;
+            }
+        }
+    }
+    private void generarMinas() {
+        boolean mina;
+        int cM = 0;
+        while (cM < numMinas) {
+            posHA = rnd.nextInt(maxTH);
+            posVA = rnd.nextInt(maxTV);
+            mina = tablero[posVA][posHA].getMina();
+            if (!mina) {
+                tablero[posVA][posHA].setMina(true);
+                cM++;
             }
         }
     }
