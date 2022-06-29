@@ -27,7 +27,7 @@ public class Casilla{
     public void setNumMinesProx(int numMinesProx ){this.numMinesProx=numMinesProx;}
     public void display(){
         char tCasilla='-';
-        if(getDescubierta()){
+        if(!getDescubierta()){
             tCasilla=(getMina()) ? '*' : Character.forDigit(getNumMinesProx(),10);
         }
         if (getMarcado()){
