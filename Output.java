@@ -5,7 +5,10 @@ public interface Output {
     String insertaTH="inserta el tamaño Horizontal del tablero [min 5]";
     String insertaNM="inserta el numero de minas del tablero [min 1]";
     String errorModoPersonalizado ="ERROR!!,VALORES INVALIDOS, minimo valores tablero [5x5] minimo valor para numeros de minas [1]";
-
     String errorConseguirInpValEditorModo ="ERROR!!,VALOR INVALIDO INSERTA VALORES ENTRE 1-4";
+    String selecPosV="selecciona la posicion Vertical de la casilla a seleccionar";
+    String selecPosH="selecciona la posicion Horizontal de la casilla a seleccionar";
+    String selecAccion="Selecciona el tipo de accion a realizar sobre la casilla";
+    String ErrorInputUsuari="ERROR!!,VALORES INVALIDOS";
 
 }
